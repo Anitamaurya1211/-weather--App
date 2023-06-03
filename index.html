@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title> Weather  App </title>
+     
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-container">
+                <canvas id="icon" width="100" height="100"></canvas>
+            </div>
+        </div>
+    <div  class="content">
+        <div class="general-information">
+            <div class="status"> Enter A location</div>
+            <div class="location"> To Find The Weather</div>
+        </div>
+        <div class="detail-section">
+            <div class="detail">
+                <div class="title">Humidity</div>
+                <div class="value" data-humidity>TBD</div>
+            </div>
+
+            <div class="detail bordered">
+                <div class="title">Temperature</div>
+                <div class="value"  data-temperature>TBD</div>
+            </div>
+            <div class="detail">
+                <div class="title">Pressure</div>
+                <div class="value"  data-pressure>TBD</div>
+            </div>
+
+            <div class="detail2">
+                <div class="title">Feels_like</div>
+                <div class="value"   data-feels_like>TBD</div>
+            </div>
+        </div>
+        
+        <div class ="city-search-container">
+            <input type="text" id="city-search"data-city-search placeholder="Enter Location">
+            <button id="btn"
+            onclick="apiCall()">Search</button>
+        </div>
+    </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
